@@ -1,25 +1,22 @@
 <ion-modal-view>
 	<ion-header-bar>
 	  <h1 class="title">Comentários</h1>
-	  <button class="button button-icon icon ion-ios-close-empty" 
-	  		  ng-click="fecharComentarios()"></button>
+	  <button class="button button-icon icon ion-ios-close-empty"></button>
 	</ion-header-bar>
-	<ion-content delegate-handle="comentariosScroll">
+	<ion-content>
 	  
 		<div class="list">
-			<div class="item item-text-wrap item-avatar" ng-repeat="item in bugComentarios.comentarios">
-				<img ng-src="{{getPictureFacebook(item.userID)}}">
-				<h2>{{item.name}}</h2>
-				<div class="badge">{{converterData(item.data)}}</div>
-				<p><b>{{item.comentario}}</b></p>
+			<div class="item item-text-wrap item-avatar">
+				<p><b>Texto do comentário vai aqui</b></p>
+				
+				<p>Data vai aqui</p>
+				
 			</div>
 		</div>
 
 	</ion-content>
 	<ion-footer-bar class="item-input-inset">
-	    <input class="full" type="text" placeholder="Escreva um comentário..." 
-	    	   ng-model="bugComentarios.novoComentario.comentario">
-	  <button class="button button-icon icon ion-android-send" 
-	  		  ng-click="enviarComentario()"></button>
+	    <input class="full" type="text" placeholder="Escreva um comentário...">
+	  	<button class="button button-icon icon ion-android-send"></button>
 	</ion-footer-bar>
 </ion-modal-view>
